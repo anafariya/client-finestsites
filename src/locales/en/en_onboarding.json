@@ -1,0 +1,38 @@
+{
+  "title": "Welcome",
+  "welcome": {
+    "title": "Complete Your Profile",
+    "description": "Welcome",
+    "text": [
+      "This is an example of the user-onboarding flow. You can replace this with your own content, try out the action in the next step or skip the intro entirely.",
+      "Have fun building with Gravity! 🛠"
+    ]
+  },
+  "event": {
+    "title": "Join an Event",
+    "description": "Join an event before your account finish set up!"
+  },
+  "profile_picture": {
+    "title": "Profile Picture",
+    "description": "Choose Your profile Picture",
+    "form": {
+      "email": {
+        "label": "Email"
+      },
+      "button": "s"
+    }
+  },
+  "duplicate_user": {
+    "title": "Important!",
+    "message": {
+      "title": "You already have an account",
+      "description": "We noticed you have already registered an account, so we used your original password to save you any confusion in the future."
+    }
+  },
+  "button": {
+    "skip": "Skip Intro",
+    "prev": "Prev",
+    "next": "Next",
+    "finish": "Finish"
+  }
+}

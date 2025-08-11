@@ -1,0 +1,141 @@
+{
+  "title": "Home",
+  "message": {
+      "title": "Welcome to Gravity!",
+      "text": "Meet your future here!"
+  },
+  "revenue": {
+      "title": "Revenue"
+  },
+  "goals": {
+      "title": "Goals"
+  },
+  "user_types": {
+      "title": "User Types"
+  },
+  "users": {
+      "title": "Users"
+  },
+  "welcome_back": "Welcome back",
+  "fields": {
+    "user": {
+        "first_name": "First Name",
+        "last_name": "Last Name",
+        "date_of_birth": "Date of Birth",
+        "gender": "Gender",
+        "email": "Email",
+        "looking_for": "Looking For",
+        "relationship_goal": "Relationship Goal",
+        "children": "Children"
+    },
+    "friend": {
+        "first_name": "Friend's First Name",
+        "last_name": "Friend's Last Name",
+        "date_of_birth": "Friend's Date of Birth",
+        "gender": "Friend's Gender",
+        "email": "Friend's Email",
+        "looking_for": "Friend's Looking For",
+        "relationship_goal": "Friend's Relationship Goal",
+        "children": "Friend's Children"
+    }
+  },
+  "add_a_friend": "Add a Friend",
+  "confirm_booking": "Confirm Booking",
+  "cancel": "Cancel",
+  "last_5": "Last 5 Events Attended",
+  "event": "Event",
+  "date": "Date",
+  "location": "Location",
+  "no_data": "No past events found.",
+  "genders": {
+    "male": "Male",
+    "female": "Female",
+    "both": "Both",
+    "diverse": "Diverse"
+  },
+  "facts": {
+    "1": {
+        "title": "What kind of person are you looking for?",
+        "options": {
+            "similar": "Someone similar to me",
+            "opposite": "Someone who’s my opposite"
+        }
+    },
+    "2": {
+        "title": "How do you feel around new people?",
+        "options": {
+            "introvert": "I tend to be quiet and observe at first",
+            "extrovert": "I easily start conversations and open up quickly",
+            "ambivert": "Somewhere in between, depends on the situation"
+        }
+    },
+    "3": {
+        "title": "How do you prefer spending time with a partner?",
+        "options": {
+            "closeness_seeker": "I love staying in, being cozy and connected",
+            "activity_seeker": "I enjoy action, new experiences and going out",
+            "both_seeker": "Both are important, depending on the phase"
+        }
+    },
+    "4": {
+        "title": "What describes you better?",
+        "options": {
+            "structured": "I like structure, plans and reliability",
+            "free_spirited": "I’m spontaneous and love going with the flow"
+        }
+    },
+    "5": {
+        "title": "How would you describe your role in a relationship?",
+        "options": {
+            "harmony": "I’m more calm, balanced, and follow the lead",
+            "dominance": "I bring energy and like to take the lead"
+        }
+    }
+  },
+  "friend_facts": {
+    "1": {
+        "title": "What kind of person are your friend looking for?",
+        "options": {
+            "similar": "Someone similar to me",
+            "opposite": "Someone who’s my opposite"
+        }
+    },
+    "2": {
+        "title": "How do your friend feel around new people?",
+        "options": {
+            "introvert": "I tend to be quiet and observe at first",
+            "extrovert": "I easily start conversations and open up quickly",
+            "ambivert": "Somewhere in between, depends on the situation"
+        }
+    },
+    "3": {
+        "title": "How do your friend prefer spending time with a partner?",
+        "options": {
+            "closeness_seeker": "I love staying in, being cozy and connected",
+            "activity_seeker": "I enjoy action, new experiences and going out",
+            "both_seeker": "Both are important, depending on the phase"
+        }
+    },
+    "4": {
+        "title": "What describes your friend better?",
+        "options": {
+            "structured": "I like structure, plans and reliability",
+            "free_spirited": "I’m spontaneous and love going with the flow"
+        }
+    },
+    "5": {
+        "title": "How would your friend describe the role in a relationship?",
+        "options": {
+            "harmony": "I’m more calm, balanced, and follow the lead",
+            "dominance": "I bring energy and like to take the lead"
+        }
+    }
+  },
+  "upcoming_events": "Upcoming Events",
+  "no_upcoming_events": "No upcoming events found.",
+  "book_event": "Book Event",
+  "age_group": "Age Group",
+  "with": "With",
+  "registered_alone": "You registered alone",
+  "view_details": "View Details"
+}

@@ -1,0 +1,141 @@
+{
+  "title": "Startseite",
+  "message": {
+    "title": "Willkommen bei Gravity!",
+    "text": "Triff hier deine Zukunft!"
+  },
+  "revenue": {
+    "title": "Umsatz"
+  },
+  "goals": {
+    "title": "Ziele"
+  },
+  "user_types": {
+    "title": "Nutzertypen"
+  },
+  "users": {
+    "title": "Nutzer"
+  },
+  "welcome_back": "Willkommen zurück",
+  "fields": {
+    "user": {
+      "first_name": "Vorname",
+      "last_name": "Nachname",
+      "date_of_birth": "Geburtsdatum",
+      "gender": "Geschlecht",
+      "email": "E-Mail",
+      "looking_for": "Wonach suchst Du?",
+      "relationship_goal": "Beziehungsziel",
+      "children": "Kinder"
+    },
+    "friend": {
+      "first_name": "Vorname des Freundes",
+      "last_name": "Nachname des Freundes",
+      "date_of_birth": "Geburtsdatum des Freundes",
+      "gender": "Geschlecht des Freundes",
+      "email": "E-Mail des Freundes",
+      "looking_for": "Wonach sucht dein Freund?",
+      "relationship_goal": "Beziehungsziel deines Freundes",
+      "children": "Kinder deines Freundes"
+    }
+  },
+  "add_a_friend": "Freund hinzufügen",
+  "confirm_booking": "Buchung bestätigen",
+  "cancel": "Abbrechen",
+  "last_5": "Letzte 5 besuchte Events",
+  "event": "Event",
+  "date": "Datum",
+  "location": "Ort",
+  "no_data": "Keine vergangenen Events gefunden.",
+  "genders": {
+    "male": "Männlich",
+    "female": "Weiblich",
+    "both": "Beides",
+    "diverse": "Divers"
+  },
+  "facts": {
+    "1": {
+      "title": "Nach welcher Art von Person suchst Du?",
+      "options": {
+        "similar": "Jemand, der mir ähnlich ist",
+        "opposite": "Jemand, der mein Gegenteil ist"
+      }
+    },
+    "2": {
+      "title": "Wie fühlst Du Dich unter neuen Leuten?",
+      "options": {
+        "introvert": "Ich bin anfangs eher ruhig und beobachte",
+        "extrovert": "Ich komme leicht ins Gespräch und öffne mich schnell",
+        "ambivert": "Kommt auf die Situation an – mal so, mal so"
+      }
+    },
+    "3": {
+      "title": "Wie verbringst Du am liebsten Zeit mit einem Partner?",
+      "options": {
+        "closeness_seeker": "Ich liebe es, zu Hause zu bleiben, es gemütlich zu haben und verbunden zu sein",
+        "activity_seeker": "Ich genieße Action, neue Erlebnisse und Ausgehen",
+        "both_seeker": "Beides ist wichtig – je nach Phase"
+      }
+    },
+    "4": {
+      "title": "Was beschreibt Dich besser?",
+      "options": {
+        "structured": "Ich mag Struktur, Planung und Verlässlichkeit",
+        "free_spirited": "Ich bin spontan und liebe es, dem Flow zu folgen"
+      }
+    },
+    "5": {
+      "title": "Wie würdest Du Deine Rolle in einer Beziehung beschreiben?",
+      "options": {
+        "harmony": "Ich bin eher ruhig, ausgeglichen und lasse mich führen",
+        "dominance": "Ich bringe Energie ein und übernehme gern die Führung"
+      }
+    }
+  },
+  "friend_facts": {
+    "1": {
+      "title": "Nach welcher Art von Person sucht dein Freund?",
+      "options": {
+        "similar": "Jemand, der mir ähnlich ist",
+        "opposite": "Jemand, der mein Gegenteil ist"
+      }
+    },
+    "2": {
+      "title": "Wie fühlt sich dein Freund unter neuen Leuten?",
+      "options": {
+        "introvert": "Ich bin anfangs eher ruhig und beobachte",
+        "extrovert": "Ich komme leicht ins Gespräch und öffne mich schnell",
+        "ambivert": "Kommt auf die Situation an – mal so, mal so"
+      }
+    },
+    "3": {
+      "title": "Wie verbringt dein Freund am liebsten Zeit mit einem Partner?",
+      "options": {
+        "closeness_seeker": "Ich liebe es, zu Hause zu bleiben, es gemütlich zu haben und verbunden zu sein",
+        "activity_seeker": "Ich genieße Action, neue Erlebnisse und Ausgehen",
+        "both_seeker": "Beides ist wichtig – je nach Phase"
+      }
+    },
+    "4": {
+      "title": "Was beschreibt deinen Freund besser?",
+      "options": {
+        "structured": "Ich mag Struktur, Planung und Verlässlichkeit",
+        "free_spirited": "Ich bin spontan und liebe es, dem Flow zu folgen"
+      }
+    },
+    "5": {
+      "title": "Wie würde dein Freund seine Rolle in einer Beziehung beschreiben?",
+      "options": {
+        "harmony": "Ich bin eher ruhig, ausgeglichen und lasse mich führen",
+        "dominance": "Ich bringe Energie ein und übernehme gern die Führung"
+      }
+    }
+  },
+  "upcoming_events": "Bevorstehende Events",
+  "no_upcoming_events": "Keine bevorstehenden Events gefunden.",
+  "book_event": "Event buchen",
+  "age_group": "Altersgruppe",
+  "with": "Mit",
+  "registered_alone": "Du hast dich allein angemeldet",
+  "view_details": "Details ansehen"
+}

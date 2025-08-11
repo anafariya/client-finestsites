@@ -1,0 +1,22 @@
+{
+  "development": {
+    "stripe": {
+      "publishableAPIKey": "pk_test_51RVZyxP9roVL8xLjEa27sMwNj84m2ka5P5D7TRrrD3449NOipFeheHDbLm03Fx8q4vYck7Cz9SSry2duTnrUP4uJ00xbBoJD3K"
+    },
+    "locales": [
+      { "value": "en", "label": "English" },
+      { "value": "de", "label": "Germany" }
+    ],
+    "server_url": "http://localhost:8080"
+  },
+  "production": {
+    "stripe": {
+      "publishableAPIKey": "pk_test_51RVZyxP9roVL8xLjEa27sMwNj84m2ka5P5D7TRrrD3449NOipFeheHDbLm03Fx8q4vYck7Cz9SSry2duTnrUP4uJ00xbBoJD3K"
+    },
+    "locales": [
+      { "value": "en", "label": "English" },
+      { "value": "de", "label": "Germany" }
+    ],
+    "server_url": "https://prod-meetlocal-api-fcf27c88b7e9.herokuapp.com"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "title": "Plan & Abrechnung",
+  "description": "Aktualisiere Deinen Plan oder Deine Kreditkarte",
+  "header": "Zahlungsmethode",
+  "sub_header": "Aktualisiere Deine Rechnungsdetails und Adresse.",
+  "button": "Verwalten",
+  "payment_details": "Zahlungsdetails",
+  "billing_history": "Rechnungshistorie",
+  "tabs": {
+    "plan": "Plan",
+    "card": "Karte",
+    "invoices": "Rechnungen",
+    "credit_card": "Kreditkarte",
+    "sepa": "SEPA-Lastschrift"
+  },
+  "change_payment": "Ändere, wie Du für Deinen Plan zahlst.",
+  "plan": {
+    "usage_helper": "Du hast verwendet",
+    "downgrade_helper": "Wenn Du zum kostenlosen Plan wechselst, endet Dein Abonnement am Ende des Abrechnungszeitraums am {{end}}. Bis dahin hast Du weiterhin Zugriff auf alle Funktionen.",
+    "form": {
+      "plan": {
+        "label": "Dein Abonnementplan"
+      },
+      "button": "Plan aktualisieren"
+    },
+    "billing_cycle": "Dein Plan wird automatisch am {{start}} verlängert",
+    "subscription_ends": "Dein Plan endet am {{end}}. Alle Seiten gehen verloren.",
+    "billing_cycle_downgrade": "Dein Plan endet am {{end}}. Dein neuer Plan „{{new_plan}}“ beginnt am {{start}}",
+    "cancel_subscription": "Abonnement kündigen",
+    "revoke_subscription": "Kündigung zurücknehmen",
+    "upgrade_plan": "Plan upgraden",
+    "save": "Änderungen speichern",
+    "note_upgrade": "Deine Auswahl ist sofort gültig.",
+    "note_downgrade": "Deine Auswahl gilt ab dem",
+    "ending_in": "endet in",
+    "edit": "Bearbeiten"
+  },
+  "card": {
+    "expires": "GÜLTIG BIS",
+    "form": {
+      "token": "Kartennummer",
+      "button": "Änderung speichern",
+      "name_on_card": "Name auf der Karte",
+      "email": "E-Mail-Adresse",
+      "street": "Straßenadresse",
+      "city": "Stadt",
+      "state": "Bundesland / Provinz",
+      "country": "Land",
+      "sub_email": "Rechnungen werden an diese E-Mail-Adresse gesendet.",
+      "prefer_payment_method": "Bevorzugte Zahlungsmethode",
+      "invoice_recipient": "Rechnungsempfänger",
+      "sub_invoice_recipient": "Der Name, der auf der Rechnung erscheint."
+    }
+  },
+  "invoice": {
+    "header": {
+      "number": "Nummer",
+      "date": "Datum",
+      "status": "Status",
+      "total": "Gesamt"
+    }
+  },
+  "message": {
+    "requires_payment_method": {
+      "title": "Deine letzte Zahlung ist fehlgeschlagen",
+      "text": "Unser letzter Versuch, Deine Karte zu belasten, ist fehlgeschlagen. Bitte aktualisiere unten Deine Kartendaten, damit wir es erneut versuchen können."
+    },
+    "requires_action": {
+      "title": "Du musst Deine Zahlung autorisieren",
+      "text": "Um Deine letzte Abo-Zahlung zu bearbeiten, musst Du die Transaktion bei Deiner Bank autorisieren. Bitte überprüfe Deine E-Mails für den Link und lade die Seite neu, wenn Du fertig bist."
+    },
+    "canceled": {
+      "title": "Dein Abonnement wurde gekündigt",
+      "text": "Um die App weiterhin zu nutzen, wähle bitte einen neuen Plan und schließe den Zahlungsprozess ab."
+    },
+    "scheduled": {
+      "text": "Dein Abonnement wird im nächsten Abrechnungszeitraum auf den {{plan}}-Plan heruntergestuft, beginnend am {{date}}."
+    }
+  }
+}

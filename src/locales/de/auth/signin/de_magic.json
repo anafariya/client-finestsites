@@ -1,0 +1,14 @@
+{
+  "title": "",
+  "message": {
+    "success": {
+      "title": "Magie wird verwendet",
+      "description": "Bitte warte, Du wirst jetzt angemeldet..."
+    },
+    "error": {
+      "title": "Magischer Link ist ungültig",
+      "description": "Bitte geh zurück und versuche es erneut",
+      "button": "Zurück zur Anmeldung"
+    }
+  }
+}

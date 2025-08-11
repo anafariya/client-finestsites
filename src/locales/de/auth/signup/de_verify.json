@@ -1,0 +1,26 @@
+{
+  "title": "Bestätige Deine E-Mail-Adresse",
+  "message": {
+    "info": {
+      "title": "Bitte überprüfe Deine E-Mails",
+      "description": "Klicke bitte auf den Link in der E-Mail, die wir Dir geschickt haben, um Dein Konto zu verifizieren.",
+      "button": "Verifizierungs-E-Mail erneut senden"
+    },
+    "verifying": {
+      "title": "Wird verifiziert...",
+      "description": "Bitte warte einen Moment, während wir Deine E-Mail verifizieren."
+    },
+    "error": {
+      "title": "Der Verifizierungslink ist abgelaufen",
+      "description": "Bitte sende die Verifizierungs-E-Mail erneut und versuche es noch einmal.",
+      "button": "Verifizierungs-E-Mail erneut senden"
+    },
+    "resent": {
+      "title": "Verifizierungs-E-Mail gesendet",
+      "description": "Bitte überprüfe Deine E-Mails auf den Verifizierungslink."
+    }
+  },
+  "footer": {
+    "link_text": "Verwalte Dein Konto"
+  }
+}

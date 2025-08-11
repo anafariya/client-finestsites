@@ -1,0 +1,32 @@
+{
+    "title": "Matching Room",
+    "header": "Upcoming Bar-Hopping Events",
+    "join_now": "Join Now",
+    "no_more_user": "No more users to swipe",
+    "no_more_description": "You've reached the end! There are no more profiles to view.",
+    "book_now": "Book Now",
+    "already_booked": "Already Booked",
+    "undo": {
+        "form": {
+            "title": "This will cost 20 hearts. Do you want to undo your action?",
+            "button": "Proceed"
+        }
+    },
+    "superlike": {
+        "form": {
+            "title": "This will cost 20 hearts. Do you want to send Superlike to this participant?",
+            "button": "Proceed"
+        }
+    },
+    "confirm_superlike": {
+        "form": {
+            "title_confirm": "Do you want to accept the Superlike?",
+            "button": "Yes",
+            "title_reject": "Do you want to reject the Superlike?",
+            "button_reject": "Reject"
+        },
+        "yes": "Yes",
+        "no": "No",
+        "tag": "Superlike Request"
+    }
+}

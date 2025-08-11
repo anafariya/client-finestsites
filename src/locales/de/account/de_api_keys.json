@@ -1,0 +1,58 @@
+{
+  "title": "API-Schlüssel",
+  "subtitle": "Deine API-Schlüssel",
+  "description": "Verwalte deine API-Schlüssel",
+  "button": "Verwalten",
+  "list": {
+    "header": {
+      "name": "Name",
+      "key": "Schlüssel",
+      "scope": "Berechtigung",
+      "active": "Aktiv"
+    },
+    "blank_slate": {
+      "title": "Erstelle einen API-Schlüssel",
+      "description": "Du hast noch keine API-Schlüssel erstellt. Möchtest du jetzt einen erstellen?",
+      "button": "Neuer API-Schlüssel"
+    },
+    "revoke": {
+      "title": "API-Schlüssel widerrufen",
+      "description": "Bist du sicher, dass du diesen API-Schlüssel widerrufen möchtest? Diese Aktion kann nicht rückgängig gemacht werden.",
+      "button": "Widerrufen"
+    },
+    "delete": {
+      "title": {
+        "single": "API-Schlüssel löschen",
+        "plural": "API-Schlüssel löschen"
+      },
+      "description": {
+        "single": "Bist du sicher, dass du diesen Schlüssel löschen möchtest?",
+        "plural": "Bist du sicher, dass du diese Schlüssel löschen möchtest?"
+      },
+      "button": "Löschen"
+    }
+  },
+  "edit": {
+    "breadcrumbs": {
+      "keys": "API-Schlüssel",
+      "edit": "Bearbeiten",
+      "create": "Erstellen"
+    },
+    "message": {
+      "title": "Dein neuer API-Schlüssel",
+      "description": "Dein API-Schlüssel ist unten aufgeführt. Bitte bewahre ihn sicher auf.",
+      "button": "Zurück zu den API-Schlüsseln"
+    },
+    "form": {
+      "name": {
+        "label": "Name",
+        "error": "Bitte gib deinem Schlüssel einen aussagekräftigen Namen"
+      },
+      "scope": {
+        "label": "Berechtigung",
+        "error": "Bitte wähle mindestens eine Berechtigung aus"
+      },
+      "button": "Speichern"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Upgrade",
+  "subtitle": "Upgrade Deinen Plan",
+  "form": {
+    "plan": {
+      "label": "Plan"
+    },
+    "token": {
+      "label": "Kreditkarte"
+    },
+    "button": "Jetzt upgraden"
+  }
+}

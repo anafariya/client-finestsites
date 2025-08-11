@@ -1,0 +1,18 @@
+{
+  "title": "Hilfe",
+  "subtitle": "Support kontaktieren",
+  "message": {
+    "title": "Brauchst Du Hilfe?",
+    "description": "Kontaktiere unser Support-Team unten. Du kannst außerdem erlauben oder verweigern, dass unser Support-Team auf Dein Konto zugreift, um Probleme zu lösen."
+  },
+  "form": {
+    "support_enabled": {
+      "label": "Support-Team den Zugriff auf mein Konto erlauben"
+    },
+    "message": {
+      "label": "Wobei können wir Dir helfen?",
+      "error": "Bitte gib eine Nachricht ein"
+    },
+    "button": "Nachricht senden"
+  }
+}

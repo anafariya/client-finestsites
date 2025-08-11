@@ -1,0 +1,18 @@
+{
+  "title": "Benachrichtigungen",
+  "subtitle": "Benachrichtigungseinstellungen",
+  "description": "Wähle aus, welche Benachrichtigungen Du erhalten möchtest",
+  "button": "Verwalten",
+  "form": {
+    "options": {
+      "new_signin": "Neue Anmeldung erkannt",
+      "plan_updated": "Abonnement wurde aktualisiert",
+      "card_updated": "Kreditkarte wurde aktualisiert",
+      "invite_accepted": "Einladung wurde angenommen"
+    },
+    "button": "Speichern"
+  },
+  "email_notifications": "E-Mail-Benachrichtigungen",
+  "push_notifications": "Push-Benachrichtigungen",
+  "update": "Einstellungen aktualisieren"
+}

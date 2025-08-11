@@ -1,0 +1,26 @@
+{
+  "title": "Inbox",
+  "message": {
+      "title": "Welcome to Gravity!",
+      "text": "This is a sample dashboard to get you started. Please read the documentation to learn how to build your own features."
+  },
+  "revenue": {
+      "title": "Revenue"
+  },
+  "goals": {
+      "title": "Goals"
+  },
+  "user_types": {
+      "title": "User Types"
+  },
+  "users": {
+      "title": "Users"
+  },
+  "conversation": "Conversation",
+  "block": "Block This User",
+  "block_description": "Are you sure want to block this user?",
+  "reason": "Reason",
+  "block_btn": "Block",
+  "type_message": "Type Message...",
+  "empty": "Inbox empty"
+}

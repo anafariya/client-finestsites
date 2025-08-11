@@ -1,0 +1,26 @@
+{
+  "title": "Posteingang",
+  "message": {
+    "title": "Willkommen bei Gravity!",
+    "text": "Dies ist ein Beispiel-Dashboard, um dir den Einstieg zu erleichtern. Bitte lies die Dokumentation, um zu lernen, wie du deine eigenen Funktionen erstellen kannst."
+  },
+  "revenue": {
+    "title": "Einnahmen"
+  },
+  "goals": {
+    "title": "Ziele"
+  },
+  "user_types": {
+    "title": "Benutzertypen"
+  },
+  "users": {
+    "title": "Benutzer"
+  },
+  "conversation": "Konversation",
+  "block": "Diesen Benutzer blockieren",
+  "block_description": "Bist du sicher, dass du diesen Benutzer blockieren möchtest?",
+  "reason": "Grund",
+  "block_btn": "Blockieren",
+  "type_message": "Nachricht eingeben...",
+  "empty": "Posteingang ist leer"
+}

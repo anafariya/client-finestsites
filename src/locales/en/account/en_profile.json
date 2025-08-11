@@ -1,0 +1,139 @@
+{
+  "title": "Profile",
+  "subtitle": "Edit Your Profile",
+  "description": "Update your profile information",
+  "button": "Update",
+  "form": {
+    "name": {
+      "label": "Your Name",
+      "error": "Please enter your name"
+    },
+    "email": {
+      "label": "Email address",
+      "error": "Please enter your email address"
+    },
+    "avatar": {
+      "label": "Profile Picture"
+    },
+    "dark_mode": {
+      "label": "Dark Mode"
+    },
+    "account_name": {
+      "label": "Account Name"
+    },
+    "default_account": {
+      "label": "Default Account"
+    },
+    "button": "Save"
+  },
+  "profile": {
+    "form": {
+        "button": "Save profile",
+        "edit_profile": "Edit Profile",
+        "first_name": {
+          "label": "First name",
+          "error": "First name is required"
+        },
+        "last_name": {
+          "label": "Last name",
+          "error": "Last name is required"
+        },
+        "email": {
+          "label": "Email address",
+          "error": "Please enter a valid email"
+        },
+        "gender": {
+          "label": "Gender"
+        },
+        "dob": {
+          "label": "Date of birth"
+        },
+        "age": {
+          "label": "Age"
+        },
+        "profession": {
+          "label": "Profession",
+          "placeholder": "Add profession…"
+        },
+        "smoking_status": {
+          "label": "Smoking Status",
+          "placeholder": "Select smoking status"
+        },
+        "interests": {
+          "label": "Interests",
+          "placeholder": "Add interests…",
+          "description": "Separate multiple interests with commas e.g. Hiking, Cooking, Reading."
+        },
+        "looking_for": {
+          "label": "Looking for",
+          "placeholder": "Select"
+        },
+        "description": {
+          "label": "About me"
+        },
+        "account_name": {
+          "label": "Account name"
+        },
+        "default_account": {
+          "label": "Default account"
+        },
+        "relationship_goal": {
+          "label": "Relationship goal",
+          "placeholder": "Select relationship goal"
+        },
+        "children": {
+          "label": "children",
+          "placeholder": "Select"
+        }
+    },
+    "gender": {
+      "male": "Male",
+      "female": "Female",
+      "other": "Other",
+      "both": "Both",
+      "diverse": "Diverse"
+    },
+    "smoking_status": {
+      "yes": "Yes",
+      "no": "No"
+    },
+    "children": {
+      "yes": "Yes",
+      "no": "No"
+    },
+    "relationship_goal": {
+      "relationship": "Relationship",
+      "friendship": "Friendship"
+    }
+  },
+  "edit_btn": "Edit Profile",
+  "change_password": "Change Password",
+  "your_photos": "Your Photos",
+  "set_avatar": "Set as Avatar",
+  "avatar": "Avatar",
+  "close_account": {
+    "title": "Delete Your Account",
+    "description": "Are you sure you want to delete your account? You will lose all of your data, and this action cannot be undone.",
+    "form": {
+      "password": {
+        "label": "Password",
+        "description": "Please enter your password to confirm your account deletion.",
+        "error": "Please enter your password to confirm your account deletion."
+      }
+    },
+    "button": "Delete",
+    "header": "Danger Zone",
+    "subtitle": "Closing your account is permanent and cannot be undone."
+  },
+  "send_a_message": "Send a message",
+  "gallery": "Gallery",
+  "receipts": {
+    "title": "Receipts",
+    "subtitle": "Download receipts for your past purchases and subscriptions.",
+    "header_1": "Date",
+    "header_2": "Item",
+    "header_3": "Amount",
+    "header_4": "Action",
+    "download": "Download"
+  }
+}

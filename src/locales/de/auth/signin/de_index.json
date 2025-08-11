@@ -1,0 +1,30 @@
+{
+  "title": "Melde dich bei Gravity an",
+  "message": {
+    "title": "Überprüfe deine E-Mails",
+    "description": "Bitte klicke auf den Link in deinem Posteingang, um dich anzumelden."
+  },
+  "button": {
+    "use_password": "Passwort verwenden",
+    "use_magic": "Magischen Link verwenden"
+  },
+  "form": {
+    "email": {
+      "label": "E-Mail"
+    },
+    "password": {
+      "label": "Passwort"
+    },
+    "forgotpassword": {
+      "text": "Passwort vergessen?"
+    },
+    "button": {
+      "use_magic": "Magischen Link senden",
+      "use_password": "Anmelden"
+    }
+  },
+  "footer": {
+    "text": "Du hast noch kein Konto?",
+    "link": "Registrieren"
+  }
+}

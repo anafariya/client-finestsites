@@ -1,0 +1,10 @@
+{
+  "dashboard": "Home",
+  "account": "Account",
+  "help": "Help",
+  "signout": "Sign Out",
+  "inbox": "Inbox",
+  "matches": "Matches",
+  "matching_room": "Matching Room",
+  "welcome": "Welcome back, "
+}

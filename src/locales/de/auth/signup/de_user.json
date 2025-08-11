@@ -1,0 +1,20 @@
+{
+  "title": "Erstelle Dein Konto",
+  "form": {
+    "name": {
+      "label": "Vorname",
+      "error": "Bitte gib Deinen Vornamen ein"
+    },
+    "email": {
+      "label": "E-Mail"
+    },
+    "password": {
+      "label": "Passwort"
+    },
+    "button": "Konto erstellen"
+  },
+  "footer": {
+    "text": "Bereits registriert? ",
+    "link_text": "Anmelden"
+  }
+}

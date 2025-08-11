@@ -1,0 +1,32 @@
+{
+  "title": "Matching-Raum",
+  "header": "Bevorstehende Bar-Hopping-Events",
+  "join_now": "Jetzt beitreten",
+  "no_more_user": "Keine weiteren Nutzer zum Swipen",
+  "no_more_description": "Du hast das Ende erreicht! Es gibt keine weiteren Profile zum Anschauen.",
+  "book_now": "Jetzt buchen",
+  "already_booked": "Bereits gebucht",
+  "undo": {
+    "form": {
+      "title": "Das kostet 20 Herzen. Möchtest Du Deine Aktion rückgängig machen?",
+      "button": "Fortfahren"
+    }
+  },
+  "superlike": {
+    "form": {
+      "title": "Das kostet 20 Herzen. Möchtest Du diesem Teilnehmer einen Superlike senden?",
+      "button": "Fortfahren"
+    }
+  },
+  "confirm_superlike": {
+    "form": {
+      "title_confirm": "Möchtest Du den Superlike annehmen?",
+      "button": "Ja",
+      "title_reject": "Möchtest Du den Superlike ablehnen?",
+      "button_reject": "Ablehnen"
+    },
+    "yes": "Ja",
+    "no": "Nein",
+    "tag": "Superlike-Anfrage"
+  }
+}

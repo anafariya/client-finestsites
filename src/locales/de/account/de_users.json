@@ -1,0 +1,65 @@
+{
+  "title": "Benutzer",
+  "subtitle": "Benutzer verwalten",
+  "description": "Lade Benutzer zu Deinem Konto ein",
+  "button": "Benutzer verwalten",
+  "header": {
+    "avatar": "Avatar",
+    "name": "Name",
+    "email": "E-Mail",
+    "date_created": "Erstellungsdatum",
+    "permission": "Berechtigung",
+    "status": "Status"
+  },
+  "new": {
+    "button": "Benutzer hinzufügen"
+  },
+  "status": {
+    "invited": "Eingeladen",
+    "registered": "Registriert",
+    "verified": "Verifiziert"
+  },
+  "invite": {
+    "title": "Benutzer hinzufügen",
+    "description": "Um mehrere Benutzer einzuladen, trenne die E-Mail-Adressen mit einem Komma.",
+    "form": {
+      "email": {
+        "label": "E-Mail"
+      },
+      "permission": {
+        "label": "Berechtigung"
+      },
+      "button": "Senden"
+    },
+    "resent_notification": "Einladung erneut gesendet an"
+  },
+  "delete_invite": {
+    "title": "Einladung löschen",
+    "description": "Bist Du sicher, dass Du die Einladung für",
+    "form": {
+      "button": "Löschen"
+    }
+  },
+  "edit": {
+    "title": "Benutzer bearbeiten",
+    "form": {
+      "name": {
+        "label": "Name"
+      },
+      "email": {
+        "label": "E-Mail"
+      },
+      "permission": {
+        "label": "Berechtigung"
+      },
+      "button": "Speichern"
+    }
+  },
+  "delete": {
+    "title": "Benutzer löschen",
+    "description": "Bist Du sicher, dass Du",
+    "form": {
+      "button": "Löschen"
+    }
+  }
+}

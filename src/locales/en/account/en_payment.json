@@ -1,0 +1,95 @@
+{
+  "title": "Select Your Plan",
+  "subtitle": "Choose your plan and get started right away:",
+  "description": "Almost done! Choose the rate that fits you perfectly, and secure immediate access to all FinestSites features. No hidden costs, no surprises – just full control and maximum flexibility for your business.",
+  "method": {
+    "title": "Payment Option",
+    "card": "Credit Card",
+    "dd": "SEPA"
+  },
+  "form": {
+    "period": {
+      "label": "Select your time interval:",
+      "monthly": {
+        "name": "Monthly",
+        "description": "No minimum term"
+      },
+      "yearly": {
+        "name": "Yearly",
+        "description": "-10 % discount"
+      }
+    },
+    "plan": {
+      "label": "Select your plan:",
+      "featured": "Best Seller"
+    },
+    "token": {
+      "label": "Credit Card"
+    },
+    "account_holder_name": {
+      "label": "Account Holder Name"
+    },
+    "iban": {
+      "label": "IBAN"
+    },
+    "button": "Save Plan"
+  },
+  "direct_debit_notice": "By providing your payment information and confirming this payment, you authorise (A) FinestSites.io and Stripe, our payment service provider, to send instructions to your bank to debit your account and (B) your bank to debit your account in accordance with those instructions. As part of your rights, you are entitled to a refund from your bank under the terms and conditions of your agreement with your bank. A refund must be claimed within 8 weeks starting from the date on which your account was debited. Your rights are explained in a statement that you can obtain from your bank. You agree to receive notifications for future debits up to 2 days before they occur.",
+  "footer": {
+    "link_text": "Manage Your Account",
+    "coffee": {
+      "title": "You invest in your business:",
+      "text": "FinestSites is cheaper than a coffee a day."
+    }
+  },
+    "plans": {
+      "choose_plan": "Choose your plan",
+      "description": "Select your plan now and get started right away.",
+      "monthly": "Monthly",
+      "monthly_note": "Cancelable monthly",
+      "annual": "Annual",
+      "annual_note": "Attractive discount",
+      "most_popular": "Most people choose this one",
+      "price_per_month": "per month",
+      "price_per_year": "per year",
+      "plan_access": "You get <strong>access to all templates</strong> and can <strong>create {{count}} </strong> ",
+      "only": "Only ",
+      "website": "website",
+      "websites": "websites",
+      "unlimited": "unlimited"
+    },
+    "transaction": {
+      "title": "Pay your transaction now",
+      "description": "Buy hearts",
+      "description_event": "Register {{event}} Event",
+      "for": "for",
+      "placeholder": "Enter coupon code",
+      "redeem": "Redeem now",
+      "change_code": "Change code",
+      "success": {
+        "title": "Coupon code successfully redeemed!",
+        "subtitle": "Your coupon code has been applied. The prices have been updated. Complete your booking now and get started right away."
+      },
+      "error": {
+        "title": "This code is invalid!",
+        "subtitle": "The code you entered is either incorrect or may have already expired."
+      }
+    },
+    "payment": {
+      "method": {
+        "credit_card": "Credit Card",
+        "sepa": "SEPA Direct Debit"
+      },
+      "form": {
+        "name_on_card": "Name on Card",
+        "card_token": "Card Token",
+        "account_holder_name": "Account Holder Name",
+        "iban": "IBAN"
+      }
+    },
+    "checkout": {
+      "title": "Cheaper than a cup of coffee a day",
+      "subtitle": "You're investing in yourself, your business, and your future. The investment is lower than the cost of a cup of coffee per day.",
+      "pay_now": "Pay now"
+    }
+}

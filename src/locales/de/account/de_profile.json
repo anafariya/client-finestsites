@@ -1,0 +1,139 @@
+{
+  "title": "Profil",
+  "subtitle": "Bearbeite dein Profil",
+  "description": "Aktualisiere deine Profilinformationen",
+  "button": "Aktualisieren",
+  "form": {
+    "name": {
+      "label": "Dein Name",
+      "error": "Bitte gib deinen Namen ein"
+    },
+    "email": {
+      "label": "E-Mail-Adresse",
+      "error": "Bitte gib deine E-Mail-Adresse ein"
+    },
+    "avatar": {
+      "label": "Profilbild"
+    },
+    "dark_mode": {
+      "label": "Dunkelmodus"
+    },
+    "account_name": {
+      "label": "Kontoname"
+    },
+    "default_account": {
+      "label": "Standardkonto"
+    },
+    "button": "Speichern"
+  },
+  "profile": {
+    "form": {
+      "button": "Profil speichern",
+      "edit_profile": "Profil bearbeiten",
+      "first_name": {
+        "label": "Vorname",
+        "error": "Vorname ist erforderlich"
+      },
+      "last_name": {
+        "label": "Nachname",
+        "error": "Nachname ist erforderlich"
+      },
+      "email": {
+        "label": "E-Mail-Adresse",
+        "error": "Bitte gib eine gültige E-Mail-Adresse ein"
+      },
+      "gender": {
+        "label": "Geschlecht"
+      },
+      "dob": {
+        "label": "Geburtsdatum"
+      },
+      "age": {
+        "label": "Alter"
+      },
+      "profession": {
+        "label": "Beruf",
+        "placeholder": "Beruf hinzufügen…"
+      },
+      "smoking_status": {
+        "label": "Raucherstatus",
+        "placeholder": "Raucherstatus auswählen"
+      },
+      "interests": {
+        "label": "Interessen",
+        "placeholder": "Interessen hinzufügen…",
+        "description": "Trenne mehrere Interessen mit Kommas, z. B. Wandern, Kochen, Lesen."
+      },
+      "looking_for": {
+        "label": "Ich suche",
+        "placeholder": "Auswählen"
+      },
+      "description": {
+        "label": "Über mich"
+      },
+      "account_name": {
+        "label": "Kontoname"
+      },
+      "default_account": {
+        "label": "Standardkonto"
+      },
+      "relationship_goal": {
+        "label": "Beziehungsziel",
+        "placeholder": "Beziehungsziel auswählen"
+      },
+      "children": {
+        "label": "Kinder",
+        "placeholder": "Auswählen"
+      }
+    },
+    "gender": {
+      "male": "Männlich",
+      "female": "Weiblich",
+      "other": "Andere",
+      "both": "Beides",
+      "diverse": "Divers"
+    },
+    "smoking_status": {
+      "yes": "Ja",
+      "no": "Nein"
+    },
+    "children": {
+      "yes": "Ja",
+      "no": "Nein"
+    },
+    "relationship_goal": {
+      "relationship": "Beziehung",
+      "friendship": "Freundschaft"
+    }
+  },
+  "edit_btn": "Profil bearbeiten",
+  "change_password": "Passwort ändern",
+  "your_photos": "Deine Fotos",
+  "set_avatar": "Als Avatar festlegen",
+  "avatar": "Avatar",
+  "close_account": {
+    "title": "Dein Konto löschen",
+    "description": "Bist du sicher, dass du dein Konto löschen möchtest? Alle deine Daten gehen verloren und dieser Vorgang kann nicht rückgängig gemacht werden.",
+    "form": {
+      "password": {
+        "label": "Passwort",
+        "description": "Bitte gib dein Passwort ein, um die Kontolöschung zu bestätigen.",
+        "error": "Bitte gib dein Passwort ein, um die Kontolöschung zu bestätigen."
+      }
+    },
+    "button": "Löschen",
+    "header": "Gefahrenzone",
+    "subtitle": "Die Schließung deines Kontos ist dauerhaft und kann nicht rückgängig gemacht werden."
+  },
+  "send_a_message": "Nachricht senden",
+  "gallery": "Galerie",
+  "receipts": {
+    "title": "Belege",
+    "subtitle": "Lade Belege für deine bisherigen Käufe und Abonnements herunter.",
+    "header_1": "Datum",
+    "header_2": "Artikel",
+    "header_3": "Betrag",
+    "header_4": "Aktion",
+    "download": "Herunterladen"
+  }
+}

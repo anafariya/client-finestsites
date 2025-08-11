@@ -1,0 +1,37 @@
+{
+  "title": "Zwei-Faktor-Authentifizierung",
+  "subtitle": "Schütze Dein Konto",
+  "description": "Schütze Dein Konto",
+  "button": {
+    "manage": "Verwalten",
+    "enable": "Aktivieren"
+  },
+  "form": {
+    "2fa_enabled": {
+      "label": "Zwei-Faktor-Authentifizierung aktivieren"
+    },
+    "code": {
+      "label": "Bestätigungscode"
+    },
+    "button": "Bestätigen"
+  },
+  "message": {
+    "scan_qr_code": {
+      "title": "QR-Code scannen",
+      "text": "Scanne den QR-Code unten mit einer Authentifizierungs-App wie Google Authenticator und gib den Bestätigungscode ein.",
+      "image_alt": "Bitte scanne dies mit Deiner Authentifizierungs-App"
+    },
+    "backup_code": {
+      "title": "Dein Backup-Code",
+      "text": "Bitte bewahre Deinen Backup-Code an einem sicheren Ort auf."
+    },
+    "2fa_enabled": {
+      "title": "2FA aktiviert",
+      "text": "Gut gemacht! Zwei-Faktor-Authentifizierung ist jetzt für Dein Konto aktiviert."
+    },
+    "enable_2fa": {
+      "title": "2FA aktivieren",
+      "text": "Wir empfehlen, 2FA für Dein Konto zu aktivieren, um die Sicherheit zu erhöhen."
+    }
+  }
+}

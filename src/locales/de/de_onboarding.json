@@ -1,0 +1,38 @@
+{
+  "title": "Willkommen",
+  "welcome": {
+    "title": "Vervollständige Dein Profil",
+    "description": "Willkommen",
+    "text": [
+      "Das ist ein Beispiel für den Benutzer-Onboarding-Prozess. Du kannst diesen Text durch Deinen eigenen Inhalt ersetzen, die Aktion im nächsten Schritt ausprobieren oder die Einführung komplett überspringen.",
+      "Viel Spaß beim Bauen mit Gravity! 🛠"
+    ]
+  },
+  "event": {
+    "title": "Tritt einem Event bei",
+    "description": "Tritt einem Event bei, bevor Dein Account vollständig eingerichtet ist!"
+  },
+  "profile_picture": {
+    "title": "Profilbild",
+    "description": "Wähle Dein Profilbild",
+    "form": {
+      "email": {
+        "label": "E-Mail"
+      },
+      "button": "s"
+    }
+  },
+  "duplicate_user": {
+    "title": "Wichtig!",
+    "message": {
+      "title": "Du hast bereits ein Konto",
+      "description": "Wir haben festgestellt, dass Du bereits ein Konto registriert hast, daher haben wir Dein ursprüngliches Passwort übernommen, um Verwirrung in Zukunft zu vermeiden."
+    }
+  },
+  "button": {
+    "skip": "Intro überspringen",
+    "prev": "Zurück",
+    "next": "Weiter",
+    "finish": "Fertig"
+  }
+}

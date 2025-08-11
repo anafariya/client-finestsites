@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, #root, body {
+
+  min-height: 100vh;
+  font-size: 15px;
+  font-family: 'Source Sans Pro', helvetica, arial, sans-serif;
+
+}
+
+@layer base {
+  
+  body {
+
+    @apply bg-gray-50 text-slate-600 dark:text-slate-200 dark:bg-slate-900;
+
+  }
+  *, *:after, *:before {
+
+    @apply bg-no-repeat;
+
+  }
+}
+
+@layer components {
+  table tbody tr:last-child td {
+    
+    @apply border-0 !important;
+
+  }
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+.clip-diagonal {
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.rdp-dropdown_root > span {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+}

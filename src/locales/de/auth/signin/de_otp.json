@@ -1,0 +1,14 @@
+{
+  "title": "Bestätigungscode eingeben",
+  "description": "Bitte gib den Bestätigungscode aus Deiner Authenticator-App ein.",
+  "form": {
+    "code": {
+      "label": "Code überprüfen"
+    },
+    "button": "Anmeldung abschließen"
+  },
+  "footer": {
+    "text": "Keinen Zugriff mehr auf Deine Authenticator-App?",
+    "button": "Backup-Code eingeben"
+  }
+}

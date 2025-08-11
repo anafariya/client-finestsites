@@ -1,0 +1,93 @@
+{
+  "title": "Wähle Deinen Plan",
+  "subtitle": "Wähle Deinen Plan und lege sofort los:",
+  "description": "Fast geschafft! Wähle den Tarif, der perfekt zu Dir passt, und sichere Dir sofortigen Zugang zu allen Funktionen von FinestSites. Keine versteckten Kosten, keine Überraschungen – nur volle Kontrolle und maximale Flexibilität für Dein Business.",
+  "method": {
+    "title": "Zahlungsoption",
+    "card": "Kreditkarte",
+    "dd": "SEPA"
+  },
+  "form": {
+    "period": {
+      "label": "Wähle Deinen Zeitraum:",
+      "monthly": {
+        "name": "Monatlich",
+        "description": "Keine Mindestlaufzeit"
+      },
+      "yearly": {
+        "name": "Jährlich",
+        "description": "10 % Rabatt"
+      }
+    },
+    "plan": {
+      "label": "Wähle Deinen Plan:",
+      "featured": "Beliebtester"
+    },
+    "token": {
+      "label": "Kreditkarte"
+    },
+    "account_holder_name": {
+      "label": "Name des Kontoinhabers"
+    },
+    "iban": {
+      "label": "IBAN"
+    },
+    "button": "Plan speichern"
+  },
+  "direct_debit_notice": "Indem Du Deine Zahlungsinformationen angibst und diese Zahlung bestätigst, autorisierst Du (A) FinestSites.io und Stripe, unseren Zahlungsdienstleister, Deiner Bank Anweisungen zu erteilen, Dein Konto zu belasten, und (B) Deine Bank, Dein Konto gemäß diesen Anweisungen zu belasten. Im Rahmen Deiner Rechte hast Du Anspruch auf eine Rückerstattung von Deiner Bank gemäß den Bedingungen Deiner Vereinbarung mit der Bank. Eine Rückerstattung muss innerhalb von 8 Wochen ab dem Datum der Belastung beantragt werden. Deine Rechte werden in einer Erklärung erläutert, die Du von Deiner Bank erhalten kannst. Du erklärst Dich damit einverstanden, bis zu 2 Tage vor einer zukünftigen Belastung benachrichtigt zu werden.",
+  "footer": {
+    "link_text": "Verwalte Dein Konto",
+    "coffee": {
+      "title": "Du investierst in Dein Business:",
+      "text": "FinestSites ist günstiger als ein Kaffee am Tag."
+    }
+  },
+  "plans": {
+    "choose_plan": "Wähle Deinen Plan",
+    "description": "Wähle jetzt Deinen Plan und starte sofort durch.",
+    "monthly": "Monatlich",
+    "monthly_note": "Monatlich kündbar",
+    "annual": "Jährlich",
+    "annual_note": "Attraktiver Rabatt",
+    "most_popular": "Dieser Plan wird am häufigsten gewählt",
+    "price_per_month": "pro Monat",
+    "price_per_year": "pro Jahr",
+    "plan_access": "Du erhältst <strong>Zugriff auf alle Vorlagen</strong> und kannst <strong>{{count}} erstellen</strong>",
+    "only": "Nur ",
+    "website": "Website",
+    "websites": "Websites",
+    "unlimited": "unbegrenzt"
+  },
+  "coupon": {
+    "title": "Hast Du einen Gutscheincode erhalten?",
+    "description": "Gib Deinen Gutscheincode hier ein.",
+    "placeholder": "Gutscheincode eingeben",
+    "redeem": "Jetzt einlösen",
+    "change_code": "Code ändern",
+    "success": {
+      "title": "Gutscheincode erfolgreich eingelöst!",
+      "subtitle": "Dein Code wurde angewendet. Die Preise wurden aktualisiert. Schließe jetzt Deine Buchung ab und starte sofort durch."
+    },
+    "error": {
+      "title": "Dieser Code ist ungültig!",
+      "subtitle": "Der eingegebene Code ist entweder falsch oder möglicherweise bereits abgelaufen."
+    }
+  },
+  "payment": {
+    "method": {
+      "credit_card": "Kreditkarte",
+      "sepa": "SEPA-Lastschrift"
+    },
+    "form": {
+      "name_on_card": "Name auf der Karte",
+      "card_token": "Kartentoken",
+      "account_holder_name": "Name des Kontoinhabers",
+      "iban": "IBAN"
+    }
+  },
+  "checkout": {
+    "title": "Günstiger als ein Kaffee am Tag",
+    "subtitle": "Du investierst in Dich, Dein Business und Deine Zukunft. Die Investition ist günstiger als ein Kaffee pro Tag.",
+    "pay_now": "Jetzt bezahlen & loslegen"
+  }
+}

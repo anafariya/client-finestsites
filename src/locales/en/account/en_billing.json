@@ -1,0 +1,80 @@
+{
+  "title": "Plan & Billing",
+  "description": "Update your plan or credit card",
+  "header": "Payment method",
+  "sub_header": "Update your billing details and address.",
+  "button": "Manage",
+  "payment_details": "Payment details",
+  "billing_history": "Billing history",
+  "tabs": {
+    "plan": "Plan",
+    "card": "Card",
+    "invoices": "Invoices",
+    "credit_card": "Credit Card",
+    "sepa": "SEPA-Lastschrift"
+  },
+  "change_payment": "Change how you pay for your plan.",
+  "plan": {
+    "usage_helper": "You've used",
+    "downgrade_helper": "Downgrading to free will cancel your subscription at the end of your billing period on {{end}}. You'll still have access to your plan features until then.",
+    "form": {
+      "plan": {
+        "label": "Your subscription plan"
+      },
+      "button": "Update Plan"
+    },
+    "billing_cycle": "Your plan renews automatically on {{start}}",
+    "subscription_ends": "Your plan will end on {{end}}. All pages will be lost.",
+    "billing_cycle_downgrade": "Your plan ends on {{end}}. Your new plan “{{new_plan}}” will start on {{start}}",
+    "cancel_subscription": "Cancel Subscription",
+    "revoke_subscription": "Revoke Cancellation",
+    "upgrade_plan": "Upgrade Plan",
+    "save": "Save Changes",
+    "note_upgrade": "Your selection is valid immediately.",
+    "note_downgrade": "Your selection is valid from",
+    "ending_in": "ending in",
+    "edit": "Edit"
+  },
+  "card": {
+    "expires": "EXPIRES",
+    "form": {
+      "token": "Card number",
+      "button": "Save change",
+      "name_on_card": "Name on card",
+      "email": "Email address",
+      "street": "Street address",
+      "city": "City",
+      "state": "State / Province",
+      "country": "Country",
+      "sub_email": "Invoices will be sent to this email address.",
+      "prefer_payment_method": "Prefer this payment method",
+      "invoice_recipient": "Invoice recipient",
+      "sub_invoice_recipient": "The name that appears on the invoice."
+    }
+  },
+  "invoice": {
+    "header": {
+      "number": "number",
+      "date": "date",
+      "status": "status",
+      "total": "total"
+    }
+	},
+  "message": {
+    "requires_payment_method": {
+      "title": "Your latest payment failed",
+      "text": "Our latest attempt to charge your card failed. Please update your card details below, and we will attempt to charge your card again."
+    },
+    "requires_action": {
+      "title": "You need to authorize your payment",
+      "text": "In order to process your latest subscription payment, you need to authorize the transaction with your bank. Please check your email for a link to do this, then refresh this page when you're done."
+    },
+    "canceled": {
+      "title": "Your subscription has been canceled",
+      "text": "In order to continue using the app, please select a new plan and complete the payment process."
+    },
+    "scheduled": {
+      "text": "Your subscription plan will be downgraded to the {{plan}} plan in the next billing cycle, starting on {{date}}."
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "welcome": "Willkommen",
+  "search": "Suche",
+  "error": {
+    "title": "Etwas ist schiefgelaufen",
+    "message": "Bitte versuch es nochmal."
+  },
+  "feedback": {
+    "title": "Gefällt dir Gravity?",
+    "form": {
+      "comment": {
+        "label": "Erzähl uns von deiner Erfahrung"
+      },
+      "button": "Feedback senden",
+      "success_title": "Feedback gesendet",
+      "success_message": "Danke, dein Feedback ist sehr geschätzt."
+    }
+  },
+  "form": {
+    "input": {
+      "error": {
+        "required": "{{label}} ist erforderlich",
+        "min": "Bitte gib mindestens {{min}} ein",
+        "max": "Bitte gib höchstens {{max}} ein",
+        "min_max": "Bitte gib einen Wert zwischen {{min}} und {{max}} ein",
+        "min_length": "{{label}} muss mindestens {{minLength}} Zeichen lang sein",
+        "max_length": "{{label}} darf höchstens {{maxLength}} Zeichen lang sein"
+      }
+    },
+    "number": {
+      "error": {
+        "invalid": "Bitte gib eine gültige Zahl ein"
+      }
+    },
+    "password": {
+      "error": {
+        "invalid": "Das Passwort muss mindestens ein Sonderzeichen enthalten"
+      }
+    },
+    "url": {
+      "error": {
+        "invalid": "Bitte gib eine gültige URL ein"
+      }
+    },
+    "phone": {
+      "error": {
+        "invalid": "Bitte gib eine gültige Telefonnummer ein, z. B. +44 0714649626"
+      }
+    },
+    "email": {
+      "error": {
+        "invalid": "Bitte gib eine gültige E-Mail-Adresse ein"
+      }
+    },
+    "date": {
+      "placeholder": "Datum auswählen"
+    },
+    "select": {
+      "placeholder": "Bitte wähle eine Option"
+    },
+    "fieldset": {
+      "error": {
+        "min": "Bitte wähle mindestens",
+        "max": "Bitte wähle höchstens",
+        "min_max": "Bitte wähle zwischen {{min}} und {{max}} Optionen."
+      }
+    },
+    "file": {
+      "dropzone": "Datei hier ablegen",
+      "error": {
+        "unselected": "Bitte wähle eine Datei aus",
+        "max": "Bitte lade höchstens",
+        "excluded": "Dateien sind nicht erlaubt"
+      }
+    }
+  },
+  "locale": {
+    "title": "Sprache ändern",
+    "form": {
+      "language": {
+        "label": "Sprache"
+      }
+    }
+  },
+  "paginate": {
+    "showing": "Zeige {{start}} – {{end}} von {{total}}",
+    "no_results": "Keine Ergebnisse"
+  },
+  "social": {
+    "use": "Verwende",
+    "or": "oder"
+  },
+  "table": {
+    "header": {
+      "select": "auswählen",
+      "actions": "Aktionen"
+    },
+    "action": {
+      "contact": "Kontaktieren",
+      "delete": "Löschen",
+      "download": "Herunterladen",
+      "edit": "Bearbeiten",
+      "reveal": "Anzeigen",
+      "revoke": "Widerrufen",
+      "select_all": "",
+      "view": "Ansehen",
+      "resend_invite": "Einladung erneut senden",
+      "new": "Neu"
+    },
+    "label": {
+      "yes": "Ja",
+      "no": "Nein"
+    },
+    "empty": "Nichts anzuzeigen"
+  },
+  "chart": {
+    "empty": "Keine Daten vorhanden"
+  },
+  "cancel": "Abbrechen"
+}
