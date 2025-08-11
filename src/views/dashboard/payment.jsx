@@ -54,6 +54,13 @@ export function Payment(props){
   // if (!fetch.data?.plans)
   //   return null;
 
+  // Calculate final amount after coupon
+  const originalAmount = fetch.data?.amount || 0;
+  const discountAmount = couponData ? (couponData?.amount_off / 100) : 0;
+  const finalAmount = Math.max(0, originalAmount - discountAmount);
+  const isFreeTransaction = finalAmount === 0 && redeemed;
+
+
   const buttonClick = async () => {
     setLoading(true);
     try {
@@ -94,20 +101,53 @@ export function Payment(props){
       setLoading(false);
     }
   }
+
+  // Handle free transaction (when coupon covers full amount)
+  const handleFreeTransaction = async () => {
+    setLoading(true);
+    try {
+      // Call the success payment endpoint directly for free transactions
+      const response = await Axios({
+        method: 'POST',
+        url: `/api/event/success`,
+        data: {
+          transaction: id,
+          coupon: coupon,
+          free_transaction: true
+        }
+      });
+      
+      // Navigate to dashboard on success
+      navigate('/dashboard');
+      
+    } catch (err) {
+      viewContext.handleError(err);
+      setLoading(false);
+    }
+  }
   
   return (
     <Animate type='pop'>
-      <Card restrictWidth className={cn(props.className, "p-4 lg:p-10 !max-w-full bg-background")}>
-        <div className='flex flex-col w-full items-start md:h-[100vh] md:max-h-[100vh] overflow-auto max-w-[600px]'>
+      <Card restrictWidth={false} className={cn(props.className, "p-4 lg:p-10 !max-w-full bg-background")}>
+        <div className='flex flex-col w-full items-start'>
 
-          <section className='mt-8 md:mt-0 w-full md:p-12s bg-background md:h-[100vh] md:max-h-[100vh] overflow-auto'>
+          <section key={`payment-${redeemed}-${isFreeTransaction}`} className='mt-8 md:mt-0 w-full md:p-12 bg-background'>
 
             {/* Coupon Code Section */}
             <div className="mt-6 p-8 bg-white rounded-lg">
               <h3 className="text-lg lg:text-xxl font-semibold text-gray-600">{props.t('account.payment.transaction.title')}</h3>
               <h3 className="text-xl lg:text-2xl font-bold mb-6 lg:mb-8">{props.t('account.payment.transaction.description_event', {
                 event: fetch?.data?.event_id?.city?.name
-              })}  {props.t('account.payment.transaction.for')} <span className="text-pink-500">€ {fetch.data?.amount}</span></h3>
+              })}  {props.t('account.payment.transaction.for')} 
+              {couponData && originalAmount > 0 && (
+                <span>
+                  <span className="line-through text-gray-400">€ {originalAmount}</span>
+                  {' → '}
+                </span>
+              )}
+              <span className={`${isFreeTransaction ? 'text-green-500' : 'text-pink-500'}`}>
+                € {finalAmount}{isFreeTransaction && ' (FREE!)'}
+              </span></h3>
 
               <h3 className="text-lg lg:text-xl font-bold pb-4">{props.t('auth.signup.payment.coupon.title')}</h3>
               <p className="text-sm text-gray-500 font-medium">{props.t('auth.signup.payment.coupon.description')}</p>
@@ -129,85 +169,133 @@ export function Payment(props){
               </div>
             </div>
 
-            <div className="mt-6 p-8 bg-white rounded-lg">
-            {/* Payment Method Tabs */}
-              <div className="w-full flex justify-center items-center">
-                <div className="flex my-4 space-x-2 bg-gray-100 p-1 rounded-lg w-fit ">
-                  <button className={`px-4 py-2 text-sm font-semibold ${!directDebit && 'bg-white shadow !font-bold font-grostek-bold'} rounded-md`} onClick={() => setDirectDebit(false)}>{props.t('auth.signup.payment.payment.method.credit_card')}</button>
-                  <button className={`px-4 py-2 text-sm font-semibold ${directDebit && 'bg-white shadow !font-bold font-grostek-bold'} rounded-md `} onClick={() => setDirectDebit(true)}>{props.t('auth.signup.payment.payment.method.sepa')}</button>
+            {!isFreeTransaction ? (
+              <div className="mt-6 p-8 bg-white rounded-lg">
+              {/* Payment Method Tabs */}
+                <div className="w-full flex justify-center items-center">
+                  <div className="flex my-4 space-x-2 bg-gray-100 p-1 rounded-lg w-fit ">
+                    <button className={`px-4 py-2 text-sm font-semibold ${!directDebit && 'bg-white shadow !font-bold font-grostek-bold'} rounded-md`} onClick={() => setDirectDebit(false)}>{props.t('auth.signup.payment.payment.method.credit_card')}</button>
+                    <button className={`px-4 py-2 text-sm font-semibold ${directDebit && 'bg-white shadow !font-bold font-grostek-bold'} rounded-md `} onClick={() => setDirectDebit(true)}>{props.t('auth.signup.payment.payment.method.sepa')}</button>
+                  </div>
                 </div>
-              </div>
 
-            {/* Payment Form */}
-            <PaymentForm
-              inputs={{
-                // plan: {
-                //   type: 'hidden',
-                //   value: selectedPlan?.id,
-                // },
-                ...!directDebit && { credit_card_name: {
-                  label: props.t('account.billing.card.form.name_on_card'),
-                  type: 'text',
-                  required: true,
-                  labelClassname: 'font-normal',
-                },
-                token: {
-                  label: props.t('auth.signup.payment.form.token.label'),
-                  type: 'creditcard',
-                  required: true,
-                },
-              },
-                ...directDebit && 
-                { 
-                  account_holder_name: {
-                    label: props.t('auth.signup.payment.form.account_holder_name.label'),
+              {/* Payment Form */}
+              <PaymentForm
+                inputs={{
+                  // plan: {
+                  //   type: 'hidden',
+                  //   value: selectedPlan?.id,
+                  // },
+                  ...!directDebit && { credit_card_name: {
+                    label: props.t('account.billing.card.form.name_on_card'),
                     type: 'text',
                     required: true,
+                    labelClassname: 'font-normal',
                   },
-                  iban: {
-                    label: props.t('auth.signup.payment.form.iban.label'),
-                    type: 'iban',
+                  token: {
+                    label: props.t('auth.signup.payment.form.token.label'),
+                    type: 'creditcard',
                     required: true,
                   },
-                  
                 },
-                coupon: {
-                  type: 'hidden',
-                  label: 'Coupon',
-                  required: false,
-                  value: coupon
-                },
-              }}
-              sepaForm={directDebit}
-              isEmail={context?.user?.accounts?.[0]?.email}
-              url={`/api/event/payment/${id}`}
-              method='POST'
-              customDisabled={() => setClicked(false)}
-              callback={ res => {
+                  ...directDebit && 
+                  { 
+                    account_holder_name: {
+                      label: props.t('auth.signup.payment.form.account_holder_name.label'),
+                      type: 'text',
+                      required: true,
+                    },
+                    iban: {
+                      label: props.t('auth.signup.payment.form.iban.label'),
+                      type: 'iban',
+                      required: true,
+                    },
+                    
+                  },
+                  coupon: {
+                    type: 'hidden',
+                    label: 'Coupon',
+                    required: false,
+                    value: coupon
+                  },
+                }}
+                sepaForm={directDebit}
+                isEmail={context?.user?.accounts?.[0]?.email}
+                url={`/api/event/payment/${id}`}
+                method='POST'
+                customDisabled={() => setClicked(false)}
+                callback={ res => {
 
-                // save the plan to context, then redirect
-                // Event('selected_plan', { plan: res.data.plan });
-                // context.update({ plan: res.data.plan, subscription: res.data.subscription });
-                navigate('/dashboard');
+                  // save the plan to context, then redirect
+                  // Event('selected_plan', { plan: res.data.plan });
+                  // context.update({ plan: res.data.plan, subscription: res.data.subscription });
+                  navigate('/dashboard');
 
-              }}
-              customBtnTrigger={customBtnClick}
-            />
+                }}
+                customBtnTrigger={customBtnClick}
+              />
 
-          </div>
+            </div>
+            ) : (
+              <div className="mt-6 p-8 bg-green-50 border-2 border-green-200 rounded-lg">
+                <div className="text-center">
+                  <h3 className="text-xl font-bold text-green-800 mb-4">
+                    🎉 Your voucher covers the full amount!
+                  </h3>
+                  <p className="text-green-700 mb-6">
+                    No payment required. Click below to complete your registration.
+                  </p>
+                </div>
+              </div>
+            )}
 
-            {/* Pay Button */}
-            <button className={`mt-6 mb-28 w-full bg-black text-white py-3 rounded-md text-lg font-semibold flex items-center justify-center space-x-2 ${clicked && 'opacity-50'}`} onClick={(e) => {
-              e.preventDefault();
-              if(!clicked){
-                setCustomBtnClick(prev => prev + 1);
-                setClicked(true);
-              }
-            }}
-            disabled={clicked}
-            >
-              <span>{props.t('auth.signup.payment.checkout.pay_now')}</span> <span>→</span>
-            </button>
+            {/* FREE TRANSACTION BUTTON - SEPARATE */}
+            {isFreeTransaction && (
+              <div style={{ margin: '20px 0', padding: '20px' }}>
+                <button 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if(!clicked){
+                      setClicked(true);
+                      handleFreeTransaction();
+                    }
+                  }}
+                  disabled={clicked}
+                  style={{
+                    width: '100%',
+                    padding: '15px 20px',
+                    backgroundColor: '#059669',
+                    color: 'white',
+                    border: 'none',
+                    borderRadius: '8px',
+                    fontSize: '18px',
+                    fontWeight: 'bold',
+                    cursor: 'pointer',
+                    display: 'block'
+                  }}
+                >
+                  Complete Registration (Free!)
+                </button>
+              </div>
+            )}
+
+            {/* Pay Button - Only show for paid transactions */}
+            {!isFreeTransaction && (
+              <button 
+                className={`mt-6 mb-28 w-full bg-black text-white py-3 rounded-md text-lg font-semibold flex items-center justify-center space-x-2 ${clicked && 'opacity-50'}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  if(!clicked){
+                    setCustomBtnClick(prev => prev + 1);
+                    setClicked(true);
+                  }
+                }}
+                disabled={clicked}
+              >
+                <span>{props.t('auth.signup.payment.checkout.pay_now')}</span> 
+                <span>→</span>
+              </button>
+            )}
           </section>
         </div>
         {

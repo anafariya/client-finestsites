@@ -29,11 +29,11 @@ const DynamicBookingForm = ({
     { label: t('dashboard.fields.user.first_name'), name: 'first_name', type: 'text', required: true, disabled: true },
     { label: t('dashboard.fields.user.last_name'), name: 'last_name', type: 'text', required: true, disabled: true },
     { label: t('dashboard.fields.user.date_of_birth'), name: 'date_of_birth', type: 'date', required: true, disabled: true },
-    { label: t('dashboard.fields.user.gender'), name: 'gender', type: 'select', required: true, disabled: true },
-    { label: t('dashboard.fields.user.email'), name: 'email', type: 'email', required: true, disabled: true, disabled: true },
-    { label: t('dashboard.fields.user.looking_for'), name: 'looking_for', type: 'select', required: true, disabled: true },
-    { label: t('dashboard.fields.user.relationship_goal'), name: 'relationship_goal', type: 'select', required: true, disabled: true},
-    { label: t('dashboard.fields.user.children'), name: 'children', type: 'select', required: true, disabled: true },
+    { label: t('dashboard.fields.user.gender'), name: 'gender', type: 'select', required: true },
+    { label: t('dashboard.fields.user.email'), name: 'email', type: 'email', required: true, disabled: true },
+    { label: t('dashboard.fields.user.looking_for'), name: 'looking_for', type: 'select', required: true },
+    { label: t('dashboard.fields.user.relationship_goal'), name: 'relationship_goal', type: 'select', required: true},
+    { label: t('dashboard.fields.user.children'), name: 'children', type: 'select', required: true },
     { label: t('dashboard.facts.1.title'), name: 'kind_of_person', type: 'radio', required: true, options: [
       { label: t('dashboard.facts.1.options.similar'), value: 'similar' },
       { label: t('dashboard.facts.1.options.opposite'), value: 'opposite' }
@@ -124,7 +124,6 @@ const DynamicBookingForm = ({
   };
 
   const areRequiredFieldsFilled = (userData, fields) => {
-    
     return fields.every(field => {
       if (!field.required) return true;
 
@@ -145,6 +144,28 @@ const DynamicBookingForm = ({
   const isMainUserValid = areRequiredFieldsFilled(mainUser, mainUserFields) && emailValid;
   const isFriendValid = !addFriend || (areRequiredFieldsFilled(friend, friendFields) && friendEmailValid);
   const isFormValid = isMainUserValid && isFriendValid;
+
+  // Get missing fields for better UX
+  const getMissingFields = (userData, fields) => {
+    return fields
+      .filter(field => field.required)
+      .filter(field => {
+        const value = userData[field.name];
+        if (field.type === 'radio' || field.type === 'select') {
+          return value === undefined || value === null || value === '';
+        }
+        if (field.type === 'email') {
+          return !value || !isValidEmail(value);
+        }
+        return !value || value.trim?.() === '';
+      })
+      .map(field => field.label);
+  };
+
+  const missingMainFields = getMissingFields(mainUser, mainUserFields);
+  const missingFriendFields = addFriend ? getMissingFields(friend, friendFields) : [];
+
+
 
   return (
     <div className="space-y-4 mt-4 max-h-[80vh] overflow-auto px-4">
@@ -265,18 +286,58 @@ const DynamicBookingForm = ({
         </div>
       )}
 
+      {/* Missing Fields Warning */}
+      {!isFormValid && (
+        <div className="mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded-md">
+          <div className="flex items-start">
+            <span className="text-yellow-600 mr-2">⚠️</span>
+            <div className="text-sm text-yellow-800">
+              <p className="font-medium mb-1">Please complete the following required fields:</p>
+              {missingMainFields.length > 0 && (
+                <div className="mb-2">
+                  <p className="font-medium text-xs">Your Information:</p>
+                  <ul className="text-xs list-disc list-inside ml-2">
+                    {missingMainFields.map((field, index) => (
+                      <li key={index}>{field}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {missingFriendFields.length > 0 && (
+                <div>
+                  <p className="font-medium text-xs">Friend's Information:</p>
+                  <ul className="text-xs list-disc list-inside ml-2">
+                    {missingFriendFields.map((field, index) => (
+                      <li key={index}>{field}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Footer Buttons */}
       <DialogFooter className="flex flex-wrap sm:flex-nowrap gap-2">
         <Button
           type="button"
           onClick={loading ? (e) => (e.preventDefault()) : isFormValid && onSubmit}
-          className="w-full sm:w-auto bg-cyan-600 hover:bg-cyan-700 flex items-center justify-center"
+          className={`w-full sm:w-auto flex items-center justify-center ${
+            isFormValid 
+              ? 'bg-cyan-600 hover:bg-cyan-700' 
+              : 'bg-gray-400 cursor-not-allowed'
+          }`}
           disabled={loading || !isFormValid}
         >
           {loading ? (
             <span className="flex items-center gap-2">
               <span className="animate-spin h-4 w-4 border-2 border-t-transparent border-white rounded-full"></span>
               {t('dashboard.confirm_booking')}
+            </span>
+          ) : !isFormValid ? (
+            <span className="flex items-center gap-2">
+              <span>⚠️ {t('dashboard.complete_required_fields')}</span>
             </span>
           ) : (
             <>
