@@ -43,22 +43,7 @@ export default function App(props){
 
   const user = JSON.parse(localStorage.getItem('user'));
   Axios.defaults.baseURL = Settings[process.env.NODE_ENV].server_url;
-  
-  // Determine the language to use - Force English for new users
-  let defaultLanguage = 'en';
-  
-  // For debugging - log the current state
-  console.log('Current user:', user);
-  console.log('Browser language:', navigator.language);
-  
-  // If no user is logged in, always use English for signup
-  if (!user) {
-    defaultLanguage = 'en'; // Force English for signup
-    console.log('No user found, forcing English language');
-    // Set Accept-Language header to English for new users
-    Axios.defaults.headers.common['Accept-Language'] = 'en';
-  }
-  
+
   if (user){
     if (user.token){
   
