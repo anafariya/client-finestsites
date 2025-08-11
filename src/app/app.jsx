@@ -2,7 +2,7 @@ import Axios from 'axios';
 import i18n from 'i18next';
 
 // components
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { PrivateRoute, AuthProvider } from './auth';
 import { UserSwiperProvider } from './user-swiper'
 import { View } from 'components/lib';
@@ -43,7 +43,7 @@ export default function App(props){
 
   const user = JSON.parse(localStorage.getItem('user'));
   Axios.defaults.baseURL = Settings[process.env.NODE_ENV].server_url;
-  
+
   if (user){
     if (user.token){
   
@@ -67,12 +67,14 @@ export default function App(props){
       en: English,
       de: Germany
     },
-    lng: user?.locale, 
+    lng: user?.locale || defaultLanguage, // Use user locale or force English
     fallbackLng: 'en',
     interpolation: {
       escapeValue: false
     }
   });
+  
+  console.log('i18n language set to:', user?.locale || defaultLanguage);
 
   // render the routes
   return(
@@ -94,7 +96,7 @@ export default function App(props){
                         <PrivateRoute { ...route }>
                           <View { ...route }/>
                         </PrivateRoute> :
-
+                        
                         <View {...route }/>
 
                     }

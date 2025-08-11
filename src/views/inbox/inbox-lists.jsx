@@ -48,7 +48,7 @@ export function InboxLists(){
         observer.unobserve(observerRef.current);
       }
     };
-  }, [observerRef.current, loading]);
+  }, [loading]); // Remove observerRef.current from dependencies
 
   const loadMore = async () => {
     if (loading || !hasMore) return;
@@ -70,11 +70,11 @@ export function InboxLists(){
   useEffect(() => {
     if (page === 1) return;
     loadMore();
-  }, [page]);
+  }, [page]); // Keep only page as dependency
 
   useEffect(() => {
-  conversationsRef.current = conversations;
-}, [conversations]);
+    conversationsRef.current = conversations;
+  }, [conversations.length]); // Only depend on conversations length, not the entire array
 
   // socket
   const socket = useRef(null);
@@ -139,9 +139,11 @@ export function InboxLists(){
     });
 
     return () => {
-      socket.current.disconnect();
+      if (socket.current) {
+        socket.current.disconnect();
+      }
     };
-  }, []);
+  }, [context?.user?.user_id, params.id]); // Add proper dependencies
 
   useEffect(() => {
     if (conversationsRef.current && params.id && context?.user?.user_id) {
@@ -161,7 +163,7 @@ export function InboxLists(){
       conversationsRef.current = updated;
       // context.setUnreadRefetch();
     }
-  }, [params?.id]);
+  }, [params?.id, context?.user?.user_id]); // Add user_id to dependencies
 
   return (
     <Animate type="pop" className="w-full">

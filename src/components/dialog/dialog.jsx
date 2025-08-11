@@ -55,6 +55,9 @@ const Dialog = forwardRef(({ className, children, title, description, form, open
         { children ||
           <Form 
             {...form } 
+            method={props.method}
+            url={props.url}
+            buttonText={props.buttonText}
             callback={ (res, data) => { onClose(false, res, data) }}
             cancel={ () => onClose(true) }
           />
