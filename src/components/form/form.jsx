@@ -813,7 +813,7 @@ function Form({ inputs, url, method, submitOnChange, callback, redirect, classNa
           type='submit'
           loading={ loading }
           text={ buttonText }
-          color='pink'
+          color={ destructive ? 'red' : 'primary' }
           className={`w-[49%] mr-[2%] last:mr-0 submit-form ${props.customBtnTrigger ? 'hidden' : ''}`}
           size={ cancel ? 'default' : 'full' }
         /> : null

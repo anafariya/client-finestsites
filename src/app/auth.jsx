@@ -179,11 +179,6 @@ export function PrivateRoute(props){
     return <Navigate to={'/signup/verify' + window.location.search} />;
   }
   // user is not authenticated
-  // Preserve eventId in signin if present
-  const urlParams = new URLSearchParams(window.location.search);
-  const eventId = urlParams.get('eventId');
-  const signinPath = eventId ? `/signin?eventId=${eventId}` : '/signin';
-  
-  return <Navigate to={signinPath} />;
+  return <Navigate to='/signin' />;
 
 }

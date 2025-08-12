@@ -61,9 +61,6 @@ const buttonVariants = cva(
         orange: 
           'bg-orange-500 hover:bg-orange-500/90 dark:bg-orange-500 dark:text-white dark:hover:bg-orange-500/90',
 
-        pink: 
-          'bg-pink-600 hover:bg-pink-700 dark:bg-pink-600 dark:text-white dark:hover:bg-pink-700',
-
         primary: 
           'bg-primary hover:bg-primary/90 dark:bg-primary dark:text-white dark:hover:bg-primary/90'
       }

@@ -86,12 +86,10 @@ export function InboxDetail(){
     });
 
     return () => {
-      if (socket.current) {
-        socket.current.emit('leave_room', chatId); // optional cleanup
-        socket.current.disconnect();
-      }
+      socket.current.emit('leave_room', chatId); // optional cleanup
+      socket.current.disconnect();
     };
-  }, [chatId, authContext?.user?.user_id]); // Add user_id to dependencies
+  }, [chatId]);
 
   useEffect(() => {
     if (!chatId) return;
@@ -103,7 +101,7 @@ export function InboxDetail(){
     // Load the first page
     loadMoreMessages();
     // authContext?.setUnreadRefetch()
-  }, [chatId]); // Keep only chatId as dependency
+  }, [chatId]);
 
   useEffect(() => {
     if (!chatId || !topRef.current) return;
@@ -124,7 +122,7 @@ export function InboxDetail(){
       if (topRef.current) observer.unobserve(topRef.current);
       observer.disconnect();
     };
-  }, [chatId, hasMore, loading, messages.length]); // Add messages.length to prevent stale closure
+  }, [chatId, hasMore, loading]);
 
   const loadMoreMessages = async (before = null) => {
   if (!chatId || loading) return;
@@ -159,13 +157,13 @@ export function InboxDetail(){
     if (chatId) {
       getUserProfile()
     }
-  }, [chatId]); // Keep only chatId as dependency
+  }, [chatId]);
 
   useEffect(() => {
     if (messagesEndRef.current) {
       messagesEndRef.current.scrollIntoView({ behavior: 'auto' });
     }
-  }, [messages.length]); // Only depend on messages length, not the entire messages array
+  }, [messages]);
 
   const handleButtonClick = () => {
     if (fileInputRef.current) {
@@ -311,10 +309,8 @@ export function InboxDetail(){
       setMessages(updatedMessages);
     };
   
-    if (messages.length > 0) {
-      loadOrientations();
-    }
-  }, [messages.length]); // Only run when messages array length changes
+    loadOrientations();
+  }, []);  
 
   const blockUser = (id) => {
     viewContext.dialog.open({
