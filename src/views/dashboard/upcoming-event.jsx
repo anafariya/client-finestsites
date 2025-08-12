@@ -140,7 +140,7 @@ export const UpcomingEventsTable = ({ events, isOnboarding }) => {
 
     useEffect(() => {
         function init() {
-            const userData = {
+            setMainUser({
                 first_name: user?.data?.first_name,
                 last_name: user?.data?.last_name,
                 date_of_birth: user?.data?.date_of_birth,
@@ -154,8 +154,7 @@ export const UpcomingEventsTable = ({ events, isOnboarding }) => {
                 prefer_spending_time: user?.data?.prefer_spending_time,
                 describe_you_better: user?.data?.describe_you_better,
                 describe_role_in_relationship: user?.data?.describe_role_in_relationship,
-            };
-            setMainUser(userData);
+            })
         }
         const timer = setTimeout(() => {
             init()
