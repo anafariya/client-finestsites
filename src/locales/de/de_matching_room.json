@@ -2,6 +2,8 @@
   "title": "Matching-Raum",
   "header": "Bevorstehende Bar-Hopping-Events",
   "join_now": "Jetzt beitreten",
+  "enter_room": "Raum betreten",
+  "cancel": "Stornieren",
   "no_more_user": "Keine weiteren Nutzer zum Swipen",
   "no_more_description": "Du hast das Ende erreicht! Es gibt keine weiteren Profile zum Anschauen.",
   "book_now": "Jetzt buchen",
@@ -28,5 +30,17 @@
     "yes": "Ja",
     "no": "Nein",
     "tag": "Superlike-Anfrage"
+  },
+  "cancel_registration": {
+    "form": {
+      "title": "Event-Anmeldung stornieren",
+      "description": "Bist Du sicher, dass Du das Event stornieren möchtest? Du erhältst einen Gutschein für ein zukünftiges Event.",
+      "button": "Ja, Anmeldung stornieren"
+    }
+  },
+  "no_events": {
+    "title": "Keine registrierten Events",
+    "description": "Du hast noch keine Events registriert. Entdecke spannende Events in deiner Nähe!",
+    "search_button": "Suchen"
   }
 }

@@ -89,5 +89,17 @@
       "title": "Cheaper than a cup of coffee a day",
       "subtitle": "You're investing in yourself, your business, and your future. The investment is lower than the cost of a cup of coffee per day.",
       "pay_now": "Pay now & get started"
+    },
+    "voucher": {
+      "discount_label": "Voucher Discount",
+      "event_registration": "Event Registration",
+      "total": "Total",
+      "free_event_message": "This event is free with your voucher!",
+      "free_registration": {
+        "title": "Registration Complete!",
+        "subtitle": "Your voucher covers the entire event cost. No payment required!",
+        "button": "Complete Free Registration"
+      },
+      "payment_summary": "Payment Summary"
     }
 }

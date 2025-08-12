@@ -2,6 +2,8 @@
     "title": "Matching Room",
     "header": "Upcoming Bar-Hopping Events",
     "join_now": "Join Now",
+    "enter_room": "Enter Room",
+    "cancel": "Cancel",
     "no_more_user": "No more users to swipe",
     "no_more_description": "You've reached the end! There are no more profiles to view.",
     "book_now": "Book Now",
@@ -28,5 +30,12 @@
         "yes": "Yes",
         "no": "No",
         "tag": "Superlike Request"
+    },
+    "cancel_registration": {
+        "form": {
+            "title": "Cancel Event Registration",
+            "description": "Are you sure you want to cancel the event? You'll receive a voucher for a future event.",
+            "button": "Yes, Cancel Registration"
+        }
     }
 }

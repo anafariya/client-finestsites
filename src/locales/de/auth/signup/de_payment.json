@@ -89,5 +89,17 @@
     "title": "Günstiger als ein Kaffee am Tag",
     "subtitle": "Du investierst in Dich, Dein Business und Deine Zukunft. Die Investition ist günstiger als ein Kaffee pro Tag.",
     "pay_now": "Jetzt bezahlen & loslegen"
+  },
+  "voucher": {
+    "discount_label": "Gutschein-Rabatt",
+    "event_registration": "Event-Anmeldung",
+    "total": "Gesamt",
+    "free_event_message": "Dieses Event ist kostenlos mit Deinem Gutschein!",
+    "free_registration": {
+      "title": "Anmeldung abgeschlossen!",
+      "subtitle": "Dein Gutschein deckt die gesamten Event-Kosten ab. Keine Zahlung erforderlich!",
+      "button": "Kostenlose Anmeldung abschließen"
+    },
+    "payment_summary": "Zahlungsübersicht"
   }
 }

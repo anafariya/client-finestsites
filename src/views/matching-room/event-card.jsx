@@ -3,7 +3,7 @@ import { Button } from 'components/shadcn/button';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
-const EventCard = ({ event, onClick }) => {
+const EventCard = ({ event, onClick, onCancel }) => {
   const { t } = useTranslation();
   function formatDateString(d){
     const formatter = new Intl.DateTimeFormat('de-DE', {
@@ -82,7 +82,7 @@ const EventCard = ({ event, onClick }) => {
               
             </div>
             <motion.div whileTap={{ scale: 0.95 }}>
-              {isOpen && (
+              {isOpen && !event.is_registered && (
                 <Button
                   variant="secondary"
                   onClick={(e) => {
@@ -93,7 +93,19 @@ const EventCard = ({ event, onClick }) => {
                 >
                   {t('matching_room.join_now')}
                 </Button>
-            )}
+              )}
+              {event.is_registered && (
+                <Button
+                  variant="secondary"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onCancel && onCancel(event);
+                  }}
+                  className="text-sm font-semibold px-3 py-1 bg-pink-600 hover:bg-pink-700 text-white transition-colors duration-300"
+                >
+                  {t('matching_room.cancel')}
+                </Button>
+              )}
             </motion.div>
           </div>
         </motion.div>
